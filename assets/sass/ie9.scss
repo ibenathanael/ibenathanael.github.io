@@ -4,53 +4,49 @@
 @import 'libs/skel';
 
 /*
-	Multiverse by HTML5 UP
+	Phantom by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Panel */
+/* Tiles */
 
-	.panel {
-		> .inner {
-			&.split {
-				&:after {
-					clear: both;
-					content: '';
-					display: block;
-				}
+	.tiles {
+		&:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
 
-				> div {
-					float: left;
-					margin-left: 0;
-					padding-left: 0;
-				}
+		article {
+			float: left;
 
-				> :first-child {
-					padding-left: 0;
+			> a {
+				padding-top: 50%;
+				margin-top: -1.75em;
+			}
+
+			body:not(.is-touch) & {
+				&:hover {
+					> .image {
+						@include vendor('transform', 'none');
+					}
 				}
 			}
 		}
 	}
 
-/* Wrapper */
+/* Footer */
 
-	#wrapper {
-		&:before {
-			display: none;
-		}
-	}
+	#footer {
+		> .inner {
+			section {
+				float: left;
+			}
 
-/* Main */
-
-	#main {
-		&:after {
-			clear: both;
-			content: '';
-			display: block;
-		}
-
-		.thumb {
-			float: left;
+			.copyright {
+				clear: both;
+				padding-top: (_size(element-margin) * 2);
+			}
 		}
 	}
