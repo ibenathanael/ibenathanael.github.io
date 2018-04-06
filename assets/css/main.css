@@ -2547,8 +2547,8 @@
 
 		.image img {
 			border-radius: 0.375em;
-			width:100px;
-			height:100px;
+			width:200px;
+			height:200px;
 			object-fit:scale-down;
 			display: block;
 		}
