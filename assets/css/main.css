@@ -2547,6 +2547,9 @@
 
 		.image img {
 			border-radius: 0.375em;
+			width:100px;
+			height:100px;
+			object-fit:scale-down;
 			display: block;
 		}
 
